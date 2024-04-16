@@ -1,0 +1,14 @@
+[user]
+	name = Pavansantosh-affinsys
+	email = pavan.santosh@affinsys.com
+	signingkey = D3629DBF238FD9DE
+[commit]
+	gpgsign = true
+[pull]
+	rebase = false
+[rebase]
+	autoStash = true
+[core]
+	autocrlf = input
+[http]
+	version = HTTP/2
