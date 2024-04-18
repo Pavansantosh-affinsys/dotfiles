@@ -1,9 +1,11 @@
 [user]
 	name = Pavansantosh-affinsys
 	email = pavan.santosh@affinsys.com
-	signingkey = D3629DBF238FD9DE
+	signingkey = ~/.ssh/pavan-affinsys
 [commit]
 	gpgsign = true
+[gpg]
+	format = ssh
 [pull]
 	rebase = false
 [rebase]

@@ -117,7 +117,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export NODE_AUTH_TOKEN=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
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
@@ -125,4 +124,15 @@ parse_git_branch() {
 
 export PS1="\[\033[01;32m\]\u@\[\033[00m\]~> \[\033[01;34m\]\W\[\033[00m\]:\[\033[31m\]\$(parse_git_branch)\[\033[00m\]\ $ "
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="/home/pavan/.cargo/bin:$PATH"
+
+export STARSHIP_CONFIG=~/home/pavan/.config/starship.toml
+
+eval "$(starship init bash)"
+
+eval "$(zoxide init bash)"
 

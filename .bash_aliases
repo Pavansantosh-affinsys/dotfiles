@@ -4,7 +4,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias cd='z'
+
 alias vim='nvim'
 
 # alias ls='eza -al --color=always --group-directories-first' # my preferred listing
@@ -25,8 +25,11 @@ alias psa='ps auxf'
 alias psgrep='ps aux | grep -v grep | grep -i -e VSZ -e'
 alias psmem='ps auxf | sort -nr -k 4'
 alias pscpu='ps auxf | sort -nr -k 3'
-
+alias k=kubectl
 alias tb='nc termbin.com 9999'
+
+alias vi='nvim'
+alias cd='z'
 
 if [ -d "$HOME/.scripts" ]; then
 	for script in "$HOME/.scripts"/*; do
