@@ -14,3 +14,5 @@
 	autocrlf = input
 [http]
 	version = HTTP/2
+[maintenance]
+	repo = /home/pavan/Backend/bud-core-query-gen-svc

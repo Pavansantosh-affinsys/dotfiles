@@ -31,6 +31,9 @@ alias tb='nc termbin.com 9999'
 alias vi='nvim'
 alias cd='z'
 
+alias psql='docker exec -it postgres psql'
+alias rabbitmqctl='docker exec -it queue rabbitmqctl'
+
 if [ -d "$HOME/.scripts" ]; then
 	for script in "$HOME/.scripts"/*; do
 		if [ -f "$script" ] && [ -x "$script" ]; then
